@@ -1,0 +1,42 @@
+# Python 編譯檔和快取檔案
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python 虛擬環境資料夾（如果你有用 virtualenv、venv）
+venv/
+env/
+.venv/
+
+# VSCode 設定資料夾
+.vscode/
+
+# Pycharm 設定資料夾
+.idea/
+
+# macOS 系統隱藏檔
+.DS_Store
+
+# 日誌檔案
+*.log
+
+# 敏感設定檔，例如存放 API key、DB 密碼的檔案
+.env
+config.json
+secret.env
+
+# SQLite 資料庫檔案（如果有用 SQLite）
+*.sqlite3
+*.db
+
+# Python 的 wheel 和發佈產物
+*.egg-info/
+dist/
+build/
+
+# coverage 測試報告
+.coverage
+htmlcov/
+
+# pytest cache
+.pytest_cache/
