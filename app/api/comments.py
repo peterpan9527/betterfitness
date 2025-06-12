@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from schemas import CommentCreate, CommentOut
 from models import Comment, Video
 from database import get_db
-from routers.videos import get_current_user
+from api.videos import get_current_user
 
 router = APIRouter(prefix="/comments", tags=["comments"])
 

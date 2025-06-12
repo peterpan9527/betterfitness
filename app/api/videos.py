@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, UploadFile, File, HTTPException
 from sqlalchemy.orm import Session
 from schemas import VideoCreate, VideoOut
-from models import Video
+from models import User, Video
 from database import get_db
 from fastapi.security import OAuth2PasswordBearer
-from jose import jwt
+from jose import JWTError, jwt
 import os
 
 router = APIRouter(prefix="/videos", tags=["videos"])
