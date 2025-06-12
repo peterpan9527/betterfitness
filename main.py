@@ -1,10 +1,8 @@
-from fastapi import FastAPI
 
-app = FastAPI()
 
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-from app import auth, videos, comments
+from app.api import auth, videos, comments
 
 app = FastAPI()
 

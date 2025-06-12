@@ -8,7 +8,7 @@ from schemas import UserCreate, UserOut
 from models import User
 from database import get_db
 
-router = APIRouter(prefix="/auth", tags=["auth"])
+auth_router = APIRouter(prefix="/auth", tags=["auth"])
 
 SECRET_KEY = "your-secret-key"  # 正式環境應使用環境變數
 ALGORITHM = "HS256"
